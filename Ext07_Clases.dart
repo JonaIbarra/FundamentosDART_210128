@@ -3,8 +3,7 @@ void main(){
     final  wolverine = Hero('Logan', 'Regeneracion');
     //Clases con parametros no posicionales
     final  xmen = Team(type: "Heroes",name: "X-Men");
-    final brotherhood = Team(name: "The BrOtherhood of Evil Mutants");
-
+    final brotherhood = Team(name: "The Brotherhood of Evil Mutants ");
 
     print(wolverine);
     print(wolverine.name);
@@ -28,7 +27,7 @@ class Hero {
 
 
 
-
+//Clases
     Hero(String pName,  String pPower)
     :name =pName,
     power =pPower;
@@ -44,8 +43,6 @@ class Team{
     String toString(){
         return 'Grupo: $name , Tipo: $type';
     }
-
-
 }
 
 
