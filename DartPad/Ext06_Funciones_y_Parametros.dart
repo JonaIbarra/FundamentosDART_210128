@@ -64,7 +64,7 @@ Costo Total: ${calculaTotalCarrito(cantidad, precio, descuento)}
 print(infoCarListStatus(buyerName: "Gabriela"));
 //6.1 Llamado de una funcion con los parametros en desorden posicional
 print(infoCarListStatus(
-    status: "En espera de pago"
+    status: "En espera de pago",
     buyerName: "Alexia",
     amountCarList: 2416.2));
 
@@ -127,8 +127,8 @@ int getDayNumber() //<- Retorna un entero
 String infoCarListStatus({required String buyerName, double amountCarList= 0.0,
  String status ="Selección de Productos"}) {
 
-    return "El carrito de compras de: ${buyerName}, tiene un toral de : ${amountCarList}, y
-    actualmente está en estatus: ${status}";
+    return """El carrito de compras de: ${buyerName}, tiene un toral de : ${amountCarList}, y
+    actualmente está en estatus: ${status}""";
 
 
 }
