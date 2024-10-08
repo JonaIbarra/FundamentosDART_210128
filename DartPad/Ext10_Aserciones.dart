@@ -1,5 +1,5 @@
 void main(){
-  final mySquqre = Square ( side:10);
+  final mySquare = Square ( side: 10);
   print("""El lado del cuadrado es de: ${mySquare._side}
   y su area es de: ${mySquare.area} """);
   mySquare.side = -5;
@@ -11,8 +11,8 @@ class Square{
   double _side ;// side * side 
 
   Square({required double side })
-  : assert(x >= 0, 'El valor debe de sere mayor a 0'),
-    :_side = side;
+  : assert(side >= 0, 'El valor debe de sere mayor a 0'),
+    _side = side;
   double get area {
     return _side * _side ;
     
@@ -20,7 +20,7 @@ class Square{
 
   set side( double value ) {
     print ( 'El valor asignado al lado $value' ) ;
-    if ( value < 0 ) throw 'El valor debe de ser mayor a 0.';
+    if ( value < 0 ) throw 'Esta validacion la hace un setter a la hora de modificar un valor del lado menoa a 0';
     _side = value;
   }
 
@@ -28,3 +28,4 @@ class Square{
     return _side * _side;
   }
 }
+
