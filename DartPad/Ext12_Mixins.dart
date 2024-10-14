@@ -22,7 +22,7 @@ mixin Caminante{
 
 mixin Nadador{
   void nadar() => print('Estoy nadando');
-  void sumergir(double profundidadMaxima) => print('Este animal puede sumergirse hasta una profundidad de ${profundidad} mts. bajo el nivel del mar');
+  void sumergir(double profundidadMaxima) => print('Este animal puede sumergirse hasta una profundidad de ${profundidadMaxima} mts. bajo el nivel del mar');
   void respirar(bool puedeRespirar) => print('¿Este animal puede Respirar?: ${puedeRespirar}');
 }
 
